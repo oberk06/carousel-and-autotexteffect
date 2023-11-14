@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-direction: column;
+}
+
+.resimler {
+  height: 350px;
+  width: 600px;
+  overflow: hidden;
+  display: flex;
+  margin: auto;
+  position: relative;
+  /* background-color: red; */
+  cursor: pointer;
+}
+img {
+  height: 350px;
+  width: 600px;
+  transform: translateX(0px);
+  border-radius: 10px;
+}
+#butonlar {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  display: flex;
+}
+
+button {
+  padding: 0.4rem;
+  margin: 4px;
+  width: 10vw;
+  border-radius: 15px;
+  background-color: #90e0ef;
+}
+button:hover {
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+.bilgi-container {
+  color: white;
+  margin-bottom: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#sabit {
+  letter-spacing: 0.6rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: green;
+}
+#akan {
+  letter-spacing: 0.6rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: green;
+  height: 40px;
+  /* background-color: red; */
+}
+
+@media (max-width: 400px) {
+
+  .resimler{
+    position: relative;
+  }
+  #butonlar {
+    /* height: 100%; */
+    position: absolute;
+    bottom: 25px;
+    left: 200px;
+    }
+ 
+
+.bilgi-container {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sabit {
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+#akan {
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+img{
+  height: 200px;
+  /* width: 600px; */
+}
+}
